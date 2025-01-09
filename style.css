@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: #ffffff;
@@ -54,4 +54,81 @@ footer {
     padding: 10px 0;
     background: #f1f1f1;
     font-size: 0.9rem;
+}
+/*  */
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+.content-wrapper .main-content {
+    flex: 2;
+}
+.content-wrapper .lecture-topics {
+    flex: 1;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.lecture-topics h2 {
+    margin-top: 0;
+}
+.lecture-topics ul {
+    list-style-type: none;
+    padding: 0;
+}
+.lecture-topics ul li {
+    margin-bottom: 10px;
+}
+
+/*  */
+
+.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+.dark-mode header {
+    background: #387ce0;
+}
+.dark-mode h2, .dark-mode a{
+    color: #66aaff;
+}
+
+.dark-mode a:hover {
+    text-decoration: underline;
+}
+
+.dark-mode main, .dark-mode footer{
+    background: #121212;
+    color: #ffffff;
+}
+
+/* .dark-mode aside, .dark-mode .lecture-topics h2 {
+    color: rgb(29, 29, 29);
+} */
+
+.dark-mode .lecture-topics {
+    background: #272727;
+    color: #ffffff;
+}
+
+button{
+    background: #e7e7e7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    background: #ffffff;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+button{
+    color: black;
+    font-family: 'Poppins', sans-serif;
 }
