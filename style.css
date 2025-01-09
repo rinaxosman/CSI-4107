@@ -24,19 +24,19 @@ body {
 #toggle-dark-mode {
     position: fixed;
     top: 20px;
-    right: 40px;
-    background: #7abfff;
-    border: 1px solid #4c74af;
+    right: 20px;
+    background: #22539c;
+    /* border: 1px solid #4c74af; */
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     z-index: 1000;
 }
 
 #toggle-dark-mode:hover {
-    background: #ffffff;
+    background: #2b67c2;
     transform: scale(1.05);
     transition: 0.3s;
 }
