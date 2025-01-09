@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="icon.png" type="image/png">
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar/main.min.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>CSI 4107: Information Retrieval</h1>
@@ -28,59 +32,62 @@
                 </section>
                 <section>
                     <h2>Course Overview</h2>
-                    <p>Basic principles of Information Retrieval. Indexing methods. Query processing. Linguistic aspects of Information Retrieval. Agents and artificial intelligence approaches to Information Retrieval. Relation of Information Retrieval to the World Wide Web. Search engines. Servers and clients. Browser and server-side programming for Information Retrieval. Pre-Requisites (CSI3103 or ELG3300), (CSI3125 or CSI2115 or SEG2101) or permission from the instructor.</p>
+                    <p>Basic principles of Information Retrieval. Indexing methods. Query processing. Linguistic aspects
+                        of Information Retrieval. Agents and artificial intelligence approaches to Information
+                        Retrieval. Relation of Information Retrieval to the World Wide Web. Search engines. Servers and
+                        clients. Browser and server-side programming for Information Retrieval. Pre-Requisites (CSI3103
+                        or ELG3300), (CSI3125 or CSI2115 or SEG2101) or permission from the instructor.</p>
                 </section>
                 <section>
                     <h2>Evaluation</h2>
                     <ul>
-                        <li>Two assignments/group projects (15% each)</li>
-                        <li>Midterm exam (20%)</li>
-                        <li>One in-class presentation (15%)</li>
-                        <li>Final exam (35%)</li>
+                        <li><a href="https://www.site.uottawa.ca/~diana/csi4107/A1_2025.htm" target="_blank">Assignment
+                                1: Due Feb 9, 10 PM</a>
+                        </li>
+                        <li>Midterm exam: Feb 28 (during class)</li>
+                        <li>Assignment 2: Due Mar 30, 10 PM</li>
+                        <li>Final exam period: April 8 to 25</li>
                         <li>Bonus points for class participation</li>
                     </ul>
                     <p>Note: All submissions are to be made electronically through BrightSpace.</p>
-                </section>
-                <section>
-                    <h2>Timetable</h2>
-                    <ul>
-                        <li>Assignment 1: Due Feb 9, 10 PM</li>
-                        <li>Midterm: Feb 28 (during class)</li>
-                        <li>Assignment 2: Due Mar 30, 10 PM</li>
-                        <li>Final Exam: During exam period</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Recommended Textbook</h2>
-                    <ul>
-                        <li><a href="http://nlp.stanford.edu/IR-book/">Introduction to Information Retrieval</a>, by Christopher D. Manning, Prabhakar Raghavan, and Hinrich Schutze, Cambridge University Press, 2008 (online version available)</li>
-                        <li><a href="https://arxiv.org/pdf/2010.06467.pdf">Pretrained Transformers for Text Ranking: BERT and Beyond</a></li>
-                        <li>Other books:
-                            <ul>
-                                <li><a href="https://www.springer.com/gp/book/9781402030043">Information Retrieval</a>, by D. Grossman and O. Frieder, Springer, 2004 (second edition)</li>
-                                <li><a href="https://www.dcs.gla.ac.uk/Keith/Preface.html">Information Retrieval</a>, by C. J. van Rijsbergen (1979)</li>
-                                <li><a href="https://dl.acm.org/doi/book/10.5555/553365">Modern Information Retrieval</a>, by Ricardo Baeza-Yates and Berthier Ribeiro-Neto, 1999 (Companion website to this book)</li>
-                            </ul>
-                        </li>
-                    </ul>
                 </section>
             </div>
             <aside class="lecture-topics">
                 <h2>Lecture Topics</h2>
                 <ul>
-                    <li><strong>Week 1:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L0.pdf" target="_blank">Preliminaries</a>, <a href="http://www.site.uottawa.ca/~diana/csi4107/L1.pdf" target="_blank">Introduction</a>, and <a href="http://www.site.uottawa.ca/~diana/csi4107/L2.pdf" target="_blank">The Internet and the WWW</a></li>
-                    <li><strong>Week 2:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L3.pdf" target="_blank">Basic IR Models</a></li>
-                    <li><strong>Week 3:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L4.pdf" target="_blank">Experimental Evaluation of IR</a></li>
-                    <li><strong>Week 4:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L5.pdf" target="_blank">Query Operations and Languages</a></li>
-                    <li><strong>Week 5:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L7.pdf" target="_blank">Web Search</a></li>
-                    <li><strong>Week 6:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L8.pdf" target="_blank">Text Categorization</a></li>
+                    <li><strong>Week 1:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L0.pdf"
+                            target="_blank">Preliminaries</a>, <a
+                            href="http://www.site.uottawa.ca/~diana/csi4107/L1.pdf" target="_blank">Introduction</a>,
+                        and <a href="http://www.site.uottawa.ca/~diana/csi4107/L2.pdf" target="_blank">The Internet and
+                            the WWW</a></li>
+                    <li><strong>Week 2:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L3.pdf"
+                            target="_blank">Basic IR Models</a></li>
+                    <li><strong>Week 3:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L4.pdf"
+                            target="_blank">Experimental Evaluation of IR</a></li>
+                    <li><strong>Week 4:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L5.pdf"
+                            target="_blank">Query Operations and Languages</a></li>
+                    <li><strong>Week 5:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L7.pdf"
+                            target="_blank">Web Search</a></li>
+                    <li><strong>Week 6:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L8.pdf"
+                            target="_blank">Text Categorization</a></li>
                     <li><strong>Week 7:</strong> Study Break (Feb 16-23)</li>
                     <li><strong>Week 8:</strong> Midterm Revision and Exam</li>
-                    <li><strong>Week 9:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/NeuralIR.pdf" target="_blank">Neural Information Retrieval</a>, <a href="http://www.site.uottawa.ca/~diana/csi4107/TransformersBERT.pdf" target="_blank">Transformers & BERT</a></li>
-                    <li><strong>Week 10:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L9.pdf" target="_blank">Text Clustering</a></li>
-                    <li><strong>Week 11:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/TopicRankSimple.pdf" target="_blank">Learning to Rank</a></li>
-                    <li><strong>Week 12:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/QA.pdf" target="_blank">Question Answering</a></li>
-                    <li><strong>Week 13:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/Cross-LanguageIR.pdf" target="_blank">Cross-Language IR</a>, <a href="http://www.site.uottawa.ca/~diana/csi4107/ImageIR.pdf" target="_blank">Image Information Retrieval</a></li>
+                    <li><strong>Week 9:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/NeuralIR.pdf"
+                            target="_blank">Neural Information Retrieval</a>, <a
+                            href="http://www.site.uottawa.ca/~diana/csi4107/TransformersBERT.pdf"
+                            target="_blank">Transformers & BERT</a></li>
+                    <li><strong>Week 10:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/L9.pdf"
+                            target="_blank">Text Clustering</a></li>
+                    <li><strong>Week 11:</strong> <a
+                            href="http://www.site.uottawa.ca/~diana/csi4107/TopicRankSimple.pdf"
+                            target="_blank">Learning to Rank</a></li>
+                    <li><strong>Week 12:</strong> <a href="http://www.site.uottawa.ca/~diana/csi4107/QA.pdf"
+                            target="_blank">Question Answering</a></li>
+                    <li><strong>Week 13:</strong> <a
+                            href="http://www.site.uottawa.ca/~diana/csi4107/Cross-LanguageIR.pdf"
+                            target="_blank">Cross-Language IR</a>, <a
+                            href="http://www.site.uottawa.ca/~diana/csi4107/ImageIR.pdf" target="_blank">Image
+                            Information Retrieval</a></li>
                     <li><strong>Week 14:</strong> Exam Revision</li>
                 </ul>
                 <section>
@@ -90,9 +97,22 @@
             </aside>
         </div>
     </main>
+    <!-- <div class="content-wrapper"> -->
+    <div class="calendar">
+        <div class="calendar-wrapper">
+            <h2>Calendar</h2>
+            <section>
+                <div id="calendar"></div>
+            </section>
+        </div>
+    </div>
+    <!-- </div> -->
+
     <footer>
-        <p>All content © Diana Inkpen | Visit the <a href="https://www.site.uottawa.ca/~diana/csi4107/index.html" target="_blank">course website</a>.</p>
+        <p>All content © Diana Inkpen | Visit the <a href="https://www.site.uottawa.ca/~diana/csi4107/index.html"
+                target="_blank">course website</a>.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar/main.min.js"></script>
 </body>
 </html>

@@ -25,6 +25,24 @@ main {
     border-radius: 10px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
+
+.calendar {
+    max-width: 900px;
+    margin: 20px auto;
+    /* padding: 20px; */
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.calendar-wrapper{
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
 section {
     margin-bottom: 20px;
 }
@@ -162,4 +180,54 @@ button{
     .lecture-topics {
         margin-top: 20px;
     }
+}
+
+/* calendar */
+
+.assignment-event {
+    background-color: #6f42c1 !important;
+    border-color: #6f42c1 !important;
+    color: white !important;
+}
+
+.exam-event {
+    background-color: rgb(255, 86, 114) !important;
+    border-color: rgb(255, 86, 114) !important;
+    color: white !important;
+}
+
+.lecture-event {
+    background-color: #096cd6 !important;
+    border-color: #096cd6 !important;
+    color: white !important;
+}
+
+.fc-event-title {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+}
+
+.dark-mode .calendar, .dark-mode .calendar-wrapper {
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+.fc-daygrid-event {
+    white-space: normal;
+    overflow: visible; 
+    height: auto; 
+    line-height: 1.2; 
+}
+
+.fc .fc-daygrid-day-frame {
+    /* overflow: hidden; */
+    height: auto; 
+}
+
+.fc .fc-day-today {
+    background-color: #d1f7d1 !important; /* Light pastel green */
+}
+
+.dark-mode .fc .fc-day-today{
+    background-color: #21572d !important; /* Light pastel green */
 }
