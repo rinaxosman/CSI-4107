@@ -104,13 +104,36 @@ document.addEventListener('DOMContentLoaded', function () {
     var calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
         events: [
-            { title: 'Assignment 1', start: '2025-02-09', classNames: 'assignment-event' },
-            { title: 'Reading Week', start: '2025-02-16', end: '2025-02-23', classNames: 'exam-event' },
-            { title: 'Midterm Exam', start: '2025-02-28', classNames: 'exam-event' },
-            { title: 'Assignment 2', start: '2025-03-30', classNames: 'assignment-event' },
-            { title: 'Final Exam Period', start: '2025-04-08', end: '2025-04-26', classNames: 'exam-event' },
-            ...lectures // Add lectures to the calendar
-        ]
+            {
+                title: 'Assignment 1',
+                start: '2025-02-09',
+                classNames: 'assignment-event',
+                url: 'https://www.site.uottawa.ca/~diana/csi4107/A1_2025.htm', // Link to Assignment 1
+            },
+            {
+                title: 'Reading Week',
+                start: '2025-02-16',
+                end: '2025-02-23',
+                classNames: 'exam-event',
+            },
+            {
+                title: 'Midterm Exam',
+                start: '2025-02-28',
+                classNames: 'exam-event',
+            },
+            {
+                title: 'Assignment 2',
+                start: '2025-03-30',
+                classNames: 'assignment-event',
+            },
+            {
+                title: 'Final Exam Period',
+                start: '2025-04-08',
+                end: '2025-04-26',
+                classNames: 'exam-event',
+            },
+            ...lectures, // Add lectures to the calendar
+        ],
     });
 
     calendar.render();

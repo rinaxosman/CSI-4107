@@ -259,6 +259,11 @@ button{
     line-height: 1.2; 
 }
 
+.fc-daygrid-event:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 .fc .fc-daygrid-day-frame {
     /* overflow: hidden; */
     height: auto; 
@@ -267,6 +272,7 @@ button{
 .fc .fc-day-today {
     background-color: #d1f7d1 !important; /* Light pastel green */
 }
+
 
 .dark-mode .fc .fc-day-today{
     background-color: #21572d !important; /* Light pastel green */
