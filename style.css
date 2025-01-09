@@ -60,7 +60,7 @@ footer {
 
 .content-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 .content-wrapper .main-content {
     flex: 2;
@@ -75,7 +75,7 @@ footer {
 }
 .content-wrapper{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
 }
 
 .lecture-topics {
