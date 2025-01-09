@@ -133,3 +133,23 @@ button{
     color: black;
     font-family: 'Poppins', sans-serif;
 }
+
+/* responsive */
+@media (max-width: 768px) {
+    .content-wrapper {
+        display: block;
+    }
+
+    .content-wrapper .main-content,
+    .content-wrapper .lecture-topics {
+        flex: unset;
+        background: unset;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .lecture-topics {
+        margin-top: 20px;
+    }
+}
