@@ -26,7 +26,7 @@ body {
     top: 20px;
     right: 40px;
     background: #7abfff;
-    border: none;
+    border: 1px solid #4c74af;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
