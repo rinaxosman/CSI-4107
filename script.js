@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Generate lecture dates dynamically
     const startDate = new Date('2025-01-06');
     const endDate = new Date('2025-04-07');
+    const switchDate = new Date('2025-03-10'); // Transition date
     const readingWeekStart = new Date('2025-02-16');
     const readingWeekEnd = new Date('2025-02-22');
     const excludedDates = ['2025-02-28']; // Exclude midterm exam date
@@ -65,18 +66,37 @@ document.addEventListener('DOMContentLoaded', function () {
         // Skip specific excluded dates (e.g., exam dates)
         if (excludedDates.includes(dateString)) continue;
 
-        if (d.getDay() === 2) { // Wednesday
-            lectures.push({
-                title: 'Lecture @MRT 118, 1:00 PM - 2:20 PM',
-                start: dateString,
-                classNames: 'lecture-event'
-            });
-        } else if (d.getDay() === 4) { // Friday
-            lectures.push({
-                title: 'Lecture @CBY C03, 11:30 AM - 12:50 PM',
-                start: dateString,
-                classNames: 'lecture-event'
-            });
+        // Assign lectures based on the switch date
+        if (d < switchDate) {
+            // Before March 10: Tuesdays (2) and Thursdays (4)
+            if (d.getDay() === 2) { // Tuesday
+                lectures.push({
+                    title: 'Lecture @MRT 118, 1:00 PM - 2:20 PM',
+                    start: dateString,
+                    classNames: 'lecture-event'
+                });
+            } else if (d.getDay() === 4) { // Thursday
+                lectures.push({
+                    title: 'Lecture @CBY C03, 11:30 AM - 12:50 PM',
+                    start: dateString,
+                    classNames: 'lecture-event'
+                });
+            }
+        } else {
+            // After March 10: Wednesdays (3) and Fridays (5)
+            if (d.getDay() === 3) { // Wednesday
+                lectures.push({
+                    title: 'Lecture @MRT 118, 1:00 PM - 2:20 PM',
+                    start: dateString,
+                    classNames: 'lecture-event'
+                });
+            } else if (d.getDay() === 5) { // Friday
+                lectures.push({
+                    title: 'Lecture @CBY C03, 11:30 AM - 12:50 PM',
+                    start: dateString,
+                    classNames: 'lecture-event'
+                });
+            }
         }
     }
 
@@ -95,7 +115,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     calendar.render();
 });
-
 
 initializeTheme();
 toggleButton.addEventListener('click', toggleDarkMode);
