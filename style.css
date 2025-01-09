@@ -7,12 +7,52 @@ body {
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-header {
+/* header {
     background: #4c74af;
     color: white;
     padding: 20px 0;
     text-align: center;
+} */
+ header {
+    background: #4c74af;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; 
 }
+
+#toggle-dark-mode {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    background: #e7e7e7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1000;
+}
+
+#toggle-dark-mode:hover {
+    background: #ffffff;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Move the button back into the header on smaller screens */
+@media (max-width: 960px) {
+    #toggle-dark-mode {
+        position: relative;
+        top: unset; 
+        right: unset;
+        margin-top: 10px; 
+    }
+}
+
+
+/*  */
 header h1 {
     margin: 0;
     font-size: 2.5rem;
